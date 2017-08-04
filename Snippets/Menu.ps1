@@ -17,11 +17,13 @@ $Result = $host.ui.PromptForChoice($Title, $Message, $Options, 0)
 switch ($Result)
     {
         # Действия, если "Yes"
-        0	{
-				Write-Host -ForegroundColor Green "OK! Мы сделали это!"
-			}
+        0
+        {
+			Write-Host -ForegroundColor Green "OK! Мы сделали это!"
+		}
         # Действия, если "No"
-        1	{
-				Write-Host -ForegroundColor Red "Нет, так нет"
-			}
+        1
+        {
+			Write-Host -ForegroundColor Red "Нет, так нет"
+		}
     }
